@@ -1,45 +1,39 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>feed</ion-title>
+    <ion-title>Feed</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
 
+    <img src="assets/images/avatar.png">
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+    <img src="assets/images/avatar2.png">
     <ion-item>
-      <ion-avatar item-start>
-        <img src="img/marty-avatar.png">
-      </ion-avatar>
-      <h2>Afonso Santos</h2>
-      <p>November 5, 1955</p>
+      <ion-icon name="football" item-start large></ion-icon>
+      <h2>{{ nome_usuario }}</h2>
+      <p>11 N. Way St, Madison, WI 53703</p>
     </ion-item>
-
-    <img src="img/advance-card-bttf.png">
-
-    <ion-card-content>
-      <p>Oi, eu sou Goku.</p>
-    </ion-card-content>
-
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-start clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-start clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
-        </button>
-      </ion-col>
-      <ion-col align-self-center text-center>
-        <ion-note>
-          11h ago
-        </ion-note>
-      </ion-col>
-    </ion-row>
-
+  
+    <ion-item>
+      <ion-icon name="wine" item-start large ></ion-icon>
+      <h2>Institute of Fine Cocktails</h2>
+      <p>14 S. Hop Avenue, Madison, WI 53703</p>
+    </ion-item>
+  
+    <ion-item>
+      <span item-start>18 min</span>
+      <span item-start>(2.6 mi)</span>
+      <button ion-button icon-start clear item-end>
+        <ion-icon name="navigate"></ion-icon>
+        Start
+      </button>
+    </ion-item>
+  
   </ion-card>
 </ion-content>
